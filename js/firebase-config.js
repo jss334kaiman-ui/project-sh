@@ -11,7 +11,7 @@
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyAiQaC9xowii69WluYQlGkQ4CVTxdrxAGM",
-  authDomain: "amongus-79722.firebaseapp.com",
+  authDomain: "https://awesomesh-default-rtdb.asia-southeast1.firebasedatabase.app",
   databaseURL: "https://amongus-79722-default-rtdb.firebaseio.com",
   projectId: "amongus-79722",
   storageBucket: "amongus-79722.firebasestorage.app",
