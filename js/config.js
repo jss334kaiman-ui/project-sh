@@ -13,7 +13,7 @@ const GAME_VERSION = "5-2";
 // ★ 교사 PIN — [교사용] 버튼을 누르고 이 번호를 넣어야 방을 만들 수 있어요.
 //   (GitHub Pages 에 올리면 누구나 이 파일을 볼 수 있으므로 강한 보안이 아니라
 //    "학생이 실수로 방을 만들지 않게 하는 수업용 잠금"입니다. 숫자만 바꿔서 쓰세요.)
-const TEACHER_PIN = "5813";
+const TEACHER_PIN = "5678";
 
 // 게임 모드 (하나의 게임 엔진 · 규칙만 다름)
 const GAME_MODES = { FREEZE_TAG: "FREEZE_TAG", AMONG_US: "AMONG_US" };
