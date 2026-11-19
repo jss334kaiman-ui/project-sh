@@ -334,6 +334,28 @@
 .wt-ctrl .btn { min-width: 64px; min-height: 52px; }
 .mg-water.disabled .wt-ctrl { opacity: .5; pointer-events: none; }
 
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 16px;
+}
+
+.quiz-choice {
+  min-height: 65px;
+  border: 2px solid #52658f;
+  border-radius: 12px;
+  background: #17233d;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quiz-choice:hover {
+  background: #29466f;
+}
+
 /* ═════════════ 학교 지도 (M) ═════════════ */
 .minimap-overlay { position: fixed; inset: 0; z-index: 35; display: none; align-items: center; justify-content: center; background: rgba(3, 6, 18, .7); padding: 12px; }
 .minimap-overlay.open { display: flex; }
