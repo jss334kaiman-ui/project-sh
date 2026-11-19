@@ -427,6 +427,37 @@ MINIGAMES.recipe = {
   },
 };
 
+MINIGAMES.quiz: {
+  build(root, q, kit) {
+    root.innerHTML = "";
+
+    const wrap = document.createElement("div");
+    wrap.className = "quiz-game";
+
+    const choices = document.createElement("div");
+    choices.className = "quiz-choices";
+
+    q.choices.forEach((choice, index) => {
+      const button = document.createElement("button");
+      button.className = "quiz-choice";
+      button.textContent = `${index + 1}. ${choice}`;
+
+      button.addEventListener("click", () => {
+        if (index + 1 === q.answer) {
+          kit.onCorrect();
+        } else {
+          kit.onWrong();
+        }
+      });
+
+      choices.appendChild(button);
+    });
+
+    wrap.appendChild(choices);
+    root.appendChild(wrap);
+  }
+},
+
 // ④ 도서관 · 책 정리 (드래그 앤 드롭)
 MINIGAMES.books = {
   build(root, q, kit) {
