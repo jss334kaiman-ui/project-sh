@@ -14,14 +14,15 @@
 
 // 핵심 미션 8개 (장소 id → 미션 정보)
 const MISSION_DEFS = {
-  computer:  { type: "power",   title: "전력 회로 복구",      short: "컴퓨터실 전력 복구", icon: "⚡", done: "전력 공급 정상" },
-  science:   { type: "liquid",  title: "용액 배합 장치 복구", short: "과학실 용액 배합",   icon: "🧪", done: "실험 장비 작동" },
-  cafeteria: { type: "recipe",  title: "급식 레시피 복구",    short: "급식실 레시피",      icon: "🍚", done: "조리 장비 정상" },
-  library:   { type: "books",   title: "도서관 책 정리",      short: "도서관 책 정리",     icon: "📚", done: "도서관 조명 켜짐" },
-  gym:       { type: "teams",   title: "체육대회 팀 편성",    short: "체육관 팀 편성",     icon: "🏀", done: "팀 편성 완료" },
-  broadcast: { type: "volume",  title: "방송 음량 조절",      short: "방송실 음량 조절",   icon: "🔊", done: "방송 정상" },
-  office:    { type: "evacmap", title: "비상 대피 지도",      short: "교무실 대피 지도",   icon: "🗺️", done: "대피 경로 표시 완료" },
-  nurse:     { type: "water",   title: "보건실 물 공급",      short: "보건실 물 공급",     icon: "💧", done: "물 공급 완료" },
+  computer:  { type: "quiz",   title: "전력 회로 복구",      short: "컴퓨터실 전력 복구", icon: "⚡", done: "전력 공급 정상" },
+  science:   { type: "quiz",  title: "용액 배합 장치 복구", short: "과학실 용액 배합",   icon: "🧪", done: "실험 장비 작동" },
+  cafeteria: { type: "quiz",  title: "급식 레시피 복구",    short: "급식실 레시피",      icon: "🍚", done: "조리 장비 정상" },
+  library:   { type: "quiz",   title: "도서관 책 정리",      short: "도서관 책 정리",     icon: "📚", done: "도서관 조명 켜짐" },
+  gym:       { type: "quiz",   title: "체육대회 팀 편성",    short: "체육관 팀 편성",     icon: "🏀", done: "팀 편성 완료" },
+  broadcast: { type: "quiz",  title: "방송 음량 조절",      short: "방송실 음량 조절",   icon: "🔊", done: "방송 정상" },
+  office:    { type: "quiz", title: "비상 대피 지도",      short: "교무실 대피 지도",   icon: "🗺️", done: "대피 경로 표시 완료" },
+  nurse:     { type: "quiz",   title: "보건실 물 공급",      short: "보건실 물 공급",     icon: "💧", done: "물 공급 완료" },
+  quiz:     { type: "quiz",   title: "학교를 위해 지식을 채우라",  short: "지식으로 학교 구하기",     icon: "📚", done: "지식 충전 완료" }, 
 };
 const CORE_LOCATIONS = Object.keys(MISSION_DEFS);
 
