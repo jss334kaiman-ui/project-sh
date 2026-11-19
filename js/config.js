@@ -5,7 +5,7 @@
 
 // 개발 중 테스트 기능 (역할 보기, 봇 추가, 시간 조절 등)
 // 학생들과 실제로 할 때는 false 로 바꾸세요.
-const DEBUG_MODE = true;
+const DEBUG_MODE = false;
 
 // 게임 버전 — 메인 화면 아래에 표시됩니다. (새 파일을 올렸는데 예전 버전이 보이면 브라우저가 옛 파일을 기억하는 것)
 const GAME_VERSION = "5-2";
